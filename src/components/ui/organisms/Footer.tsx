@@ -1,4 +1,4 @@
-import Container from "./ui/Container";
+import Container from "../molecules/Container";
 
 const Footer: React.FC = () => {
   return <Container>Footer</Container>;

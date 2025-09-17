@@ -1,10 +1,11 @@
 import { CiSearch } from "react-icons/ci";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
-import Flex from "./ui/Flex";
-import Container from "./ui/Container";
-import ImageContainer from "./ui/ImageContainer";
-import NavItem from "./ui/NavItem";
+import Flex from "../molecules/Flex";
+import Container from "../molecules/Container";
+import ImageContainer from "../molecules/ImageContainer";
+import NavItem from "../molecules/NavItem";
+import NavMenu from "./NavMenu";
 
 const navItems = [
   {
@@ -39,7 +40,7 @@ const Header: React.FC = () => {
     <Container>
       <Flex className="items-center justify-between">
         <ImageContainer className="max-w-[228px]" src="Logo.png" alt="logo" />
-        <ul className="flex flex-row items-center gap-10 font-gupter">
+        <NavMenu>
           {navItems.map((item) => (
             <NavItem
               className="relative block after:absolute after:content-[''] after:top-full after:left-0 after:w-0 hover:after:w-full after:h-[3px] after:bg-black after:transition-all"
@@ -48,7 +49,7 @@ const Header: React.FC = () => {
               href={item.href}
             />
           ))}
-        </ul>
+        </NavMenu>
         <Flex className="gap-4">
           <CiSearch size={24} />
           <FaRegTrashAlt size={24} />
