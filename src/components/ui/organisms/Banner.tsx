@@ -15,7 +15,7 @@ const Banner: React.FC = () => {
           >
             Modern Furniture For Modern Living Style
           </Text>
-          <Paragraph className="max-w-[471px] py-[43px] text-[20px] leading-[28px] tracking-[2%]">
+          <Paragraph className="font-habibi max-w-[471px] py-[43px] text-[20px] leading-[28px] tracking-[2%]">
             In publishing and graphic design, Lorem ipsum is a placeholder text
             commonly used to demonstr ate the visual form of a document or a
             typeface without relying on meaningful content. Lorem ipsum may be

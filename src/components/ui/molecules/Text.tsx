@@ -1,7 +1,7 @@
 import React, { type PropsWithChildren } from "react";
 
 const Text: React.FC<
-  PropsWithChildren & { size: number; className?: string }
+  PropsWithChildren & { size?: number; className?: string }
 > = ({ children, size, className }) => {
   switch (size) {
     case 1:
