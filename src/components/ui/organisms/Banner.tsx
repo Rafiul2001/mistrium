@@ -1,22 +1,44 @@
-import Button from "../molecules/Button"
-import Container from "../molecules/Container"
-import Flex from "../molecules/Flex"
-import Paragraph from "../molecules/Paragraph"
-import Text from "../molecules/Text"
+import Button from "../molecules/Button";
+import Container from "../molecules/Container";
+import Flex from "../molecules/Flex";
+import Paragraph from "../molecules/Paragraph";
+import Text from "../molecules/Text";
 
 const Banner: React.FC = () => {
-    return (
-        <Container>
-            <Text size={6}>Modern Furniture For Modern Living Style</Text>
-            <Paragraph>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstr ate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</Paragraph>
-            <br /><br /><br /><br />
-            <Paragraph>graphic design, Lorem ipsum is a place holder text commonly used to demo nstrate the visual form of a document or a typeface without relying ..</Paragraph>
-            <Flex className="gap-[33px]">
-                <Button>Register</Button>
-                <Button>Watch Video’s</Button>
-            </Flex>
-        </Container>
-    )
-}
+  return (
+    <Container>
+      <Flex className="pt-[73px] pb-[208px]">
+        <div>
+          <Text
+            size={1}
+            className="max-w-[710px] text-[65px] leading-[76px] tracking-[2%]"
+          >
+            Modern Furniture For Modern Living Style
+          </Text>
+          <Paragraph className="max-w-[471px] py-[43px] text-[20px] leading-[28px] tracking-[2%]">
+            In publishing and graphic design, Lorem ipsum is a placeholder text
+            commonly used to demonstr ate the visual form of a document or a
+            typeface without relying on meaningful content. Lorem ipsum may be
+            used as a placeholder before final copy is available.
+            <br />
+            <br />
+            <br />
+            <br />
+            graphic design, Lorem ipsum is a place holder text commonly used to
+            demo nstrate the visual form of a document or a typeface without
+            relying ..
+          </Paragraph>
+          <Flex className="gap-[33px]">
+            <Button>Register</Button>
+            <Button>Watch Video’s</Button>
+          </Flex>
+        </div>
+        <div>
+            <img src="banner-image.png" alt="banner-image" />
+        </div>
+      </Flex>
+    </Container>
+  );
+};
 
-export default Banner
+export default Banner;

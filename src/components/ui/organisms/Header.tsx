@@ -43,7 +43,7 @@ const Header: React.FC = () => {
         <NavMenu>
           {navItems.map((item) => (
             <NavItem
-              className="relative block after:absolute after:content-[''] after:top-full after:left-0 after:w-0 hover:after:w-full after:h-[3px] after:bg-black after:transition-all"
+              className="relative block after:absolute after:content-[''] after:top-full after:left-0 after:w-0 hover:after:w-full after:h-[3px] after:bg-black after:transition-all text-[17px] font-gupter tracking-[2%]"
               key={item.id}
               name={item.name}
               href={item.href}
