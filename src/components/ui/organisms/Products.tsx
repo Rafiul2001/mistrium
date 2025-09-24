@@ -68,10 +68,10 @@ const products: TProduct[] = [
 
 const Products: React.FC = () => {
     return (
-        <Container className="mt-[154px]">
-            <Flex className="w-full">
-                <Text className="flex-1 font-gupter font-bold text-[40px] tracking-[2%]">Products</Text>
-                <ul className="mt-[42px] flex gap-[109px] items-center">
+        <Container className="mt-8 lg:mt-[154px]">
+            <Flex className="w-full flex-col lg:flex-row">
+                <Text className="flex-1 font-gupter font-bold text-[40px] tracking-[2%] text-center lg:text-left">Products</Text>
+                <ul className="mt-9 lg:mt-[42px] flex flex-col lg:flex-row gap-2 lg:gap-[109px] items-center">
                     <li><Text className="font-medium font-gupter text-[25px] tracking-[2%]">Best Selling</Text></li>
                     <li><Text className="font-medium font-gupter text-[25px] tracking-[2%]">Most Popular</Text></li>
                     <li>
@@ -83,11 +83,11 @@ const Products: React.FC = () => {
                 </ul>
             </Flex>
 
-            <Grid className="grid-cols-3 gap-x-[46px] gap-y-[18px] mt-[77px]">
+            <Grid className="grid-cols-1 lg:grid-cols-3 gap-x-[46px] gap-y-20 lg:gap-y-[18px] mt-9 lg:mt-[77px]">
                 {/* Product Card */}
                 {
                     products.map((pd) => (
-                        <div key={pd.id} className="relative grid-item [&:nth-child(3n+2)]:mt-8 [&:nth-child(3n+3)]:mt-6">
+                        <div key={pd.id} className="relative grid-item lg:hover:scale-110">
                             <Flex className="absolute top-0 left-1/2 -translate-x-1/2 rounded-[25px] w-fit items-center gap-[25px] px-[37px] py-[22px] bg-[#D1A070]">
                                 <Text className="font-gupter font-medium tracking-[2%] text-nowrap">Add to cart</Text>
                                 <BsCart2 size={32} />

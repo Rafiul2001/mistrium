@@ -7,28 +7,28 @@ import Text from "../molecules/Text";
 const Banner: React.FC = () => {
   return (
     <Container>
-      <Flex className="pt-[73px] pb-[208px]">
+      <Flex className="pt-[32px] lg:pt-[73px] lg:pb-[208px] flex-col lg:flex-row">
         <div>
           <Text
             size={1}
-            className="max-w-[710px] text-[65px] leading-[76px] tracking-[2%]"
+            className="max-w-[710px] text-[32px] lg:text-[65px] leading-normal font-bold lg:leading-[76px] tracking-[2%]"
           >
             Modern Furniture For Modern Living Style
           </Text>
-          <Paragraph className="font-habibi max-w-[471px] py-[43px] text-[20px] leading-[28px] tracking-[2%]">
+          <Paragraph className="font-habibi max-w-[471px] py-[20px] lg:py-[43px] lg:text-[20px] leading-[28px] tracking-[2%]">
             In publishing and graphic design, Lorem ipsum is a placeholder text
             commonly used to demonstr ate the visual form of a document or a
             typeface without relying on meaningful content. Lorem ipsum may be
             used as a placeholder before final copy is available.
-            <br />
-            <br />
-            <br />
-            <br />
+            <br className="hidden lg:inline-block"/>
+            <br className="hidden lg:inline-block"/>
+            <br className="hidden lg:inline-block"/>
+            <br className="hidden lg:inline-block"/>
             graphic design, Lorem ipsum is a place holder text commonly used to
             demo nstrate the visual form of a document or a typeface without
             relying ..
           </Paragraph>
-          <Flex className="gap-[33px]">
+          <Flex className="gap-4 lg:gap-[33px]">
             <Button>Register</Button>
             <Button>Watch Video’s</Button>
           </Flex>

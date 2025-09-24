@@ -21,23 +21,23 @@ export const SliderComponent: React.FC = () => {
     };
 
     return (
-        <div className="relative">
+        <div className="relative mt-20 lg:mt-0 overflow-x-hidden">
             <Slider ref={sliderRef} {...settings}>
-                <Flex className="items-center gap-[105px] px-[80px]">
+                <Flex className="flex-col lg:flex-row items-center gap-8 lg:gap-[105px] px-2 lg:px-[80px]">
                     <ImageContainer
                         src="customer-say-1.png"
                         alt="customer-say-1"
                         className="flex-1 max-w-[477px]"
                     />
                     <Flex className="flex-1 flex-col">
-                        <Text size={2} className="max-w-[461px] font-gupter font-medium text-[55px]">
+                        <Text size={2} className="lg:max-w-[461px] font-gupter font-bold lg:font-medium text-[32px] text-center lg:text-left lg:text-[55px]">
                             Leat’s See What Our Customer Say
                         </Text>
-                        <Paragraph className="max-w-[559px] mt-[62px] font-habibi text-[20px] leading-[28px] tracking-[2%]">
+                        <Paragraph className="max-w-[559px] mt-8 lg:mt-[62px] font-habibi text-[20px] leading-[28px] tracking-[2%] text-center lg:text-left">
                             graphic design, Lorem ipsum is a place holder text commonly used to
                             demonstrate the visual form of a document or a typeface without relying ..
                         </Paragraph>
-                        <Flex className="self-center gap-[88px] mt-[135px]">
+                        <Flex className="self-center gap-[88px] mt-9 lg:mt-[135px]">
                             <Flex className="flex-col">
                                 <Text size={3} className="font-gupter font-bold text-[22px] tracking-[2%]">
                                     Istiak Mahmud
@@ -50,21 +50,21 @@ export const SliderComponent: React.FC = () => {
                         </Flex>
                     </Flex>
                 </Flex>
-                <Flex className="items-center gap-[105px] px-[80px]">
+                <Flex className="flex-col lg:flex-row items-center gap-8 lg:gap-[105px] px-2 lg:px-[80px]">
                     <ImageContainer
                         src="customer-say-1.png"
                         alt="customer-say-1"
                         className="flex-1 max-w-[477px]"
                     />
                     <Flex className="flex-1 flex-col">
-                        <Text size={2} className="max-w-[461px] font-gupter font-medium text-[55px]">
+                        <Text size={2} className="lg:max-w-[461px] font-gupter font-bold lg:font-medium text-[32px] text-center lg:text-left lg:text-[55px]">
                             Leat’s See What Our Customer Say
                         </Text>
-                        <Paragraph className="max-w-[559px] mt-[62px] font-habibi text-[20px] leading-[28px] tracking-[2%]">
+                        <Paragraph className="max-w-[559px] mt-8 lg:mt-[62px] font-habibi text-[20px] leading-[28px] tracking-[2%] text-center lg:text-left">
                             graphic design, Lorem ipsum is a place holder text commonly used to
                             demonstrate the visual form of a document or a typeface without relying ..
                         </Paragraph>
-                        <Flex className="self-center gap-[88px] mt-[135px]">
+                        <Flex className="self-center gap-[88px] mt-9 lg:mt-[135px]">
                             <Flex className="flex-col">
                                 <Text size={3} className="font-gupter font-bold text-[22px] tracking-[2%]">
                                     Istiak Mahmud
@@ -80,7 +80,7 @@ export const SliderComponent: React.FC = () => {
             </Slider>
 
             {/* Custom buttons */}
-            <Flex className="gap-[18px] absolute right-0 bottom-4 z-10">
+            <Flex className="gap-[18px] justify-center lg:justify-normal lg:absolute right-0 bottom-4 z-10">
                 <div className="cursor-pointer" onClick={() => sliderRef.current?.slickPrev()}>
                     <FiArrowLeftCircle
                         size={36}

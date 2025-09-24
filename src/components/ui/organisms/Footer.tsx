@@ -37,8 +37,8 @@ const navItems = [
 const Footer: React.FC = () => {
   return (
     <div>
-      <Container className="pl-[108px] pr-[72px] mt-[114px]">
-        <Flex className="items-center justify-between">
+      <Container className="lg:pl-[108px] lg:pr-[72px] mt-[114px]">
+        <Flex className="items-center justify-center gap-8 lg:justify-between">
           <ImageContainer
             className="max-w-[228px]"
             src="Logo T.png"
